@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+    
+    
+
+    <style>
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: #2721cc;
+  padding: 20px;
+  color: #fff;
+}
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.btn{
+width: 150px;
+height:50px;
+background-color: blue;
+color: #fff;
+font-size: large;
+border-radius: 10px;
+}
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.list{
+margin-left: 20%;
+color: #fff;
+font-size: large;
+font-family: sans-serif;
+
+}
+.first{display: flex;
+  height: 80px;
+
+}
+
+    </style>
+</head>
+<body>
+<div class="first">
+<a href="index.html"><img src="logo.png" width="70px" height="70px" style="border-radius: 40px; margin-left: 50px;"></a>
+<h4 style="color:rgb(29, 29, 123); margin-left:60px ;" >KARACHI INSTITUTE OF TECHNOLOGY</h4>
+ 
+
+
+
+</div>
+ 
+    <div class="container">
+        <form  >
+          <div class="row">
+            <div class="col-25">
+              <label for="fname"> Name/your full name</label>
+            </div>
+            <div class="col-75">
+              <input id="fname" type="text" id="fname" name="name" placeholder="Your name..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">father Name</label>
+            </div>
+            <div class="col-75">
+              <input id="lname" type="text" class="lname" name="lastname" placeholder="Your father name..">
+            </div>
+          </div>
+
+
+        <!-- end -->
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">your CNIC</label>
+          </div>
+          <div class="col-75">
+            <input id="cnic" type="text" class="lname" name="lastname" placeholder="Your CNIC..">
+          </div>
+        </div>
+<!-- end -->
+<div class="row">
+  <div class="col-25">
+    <label for="lname">last Qualification</label>
+  </div>
+  <div class="col-75">
+    <input id="Qualification" type="text" class="lname" name="lastname" placeholder="Matric/Entermediate..">
+  </div>
+</div>
+<!-- end -->
+<div class="row">
+  <div class="col-25">
+    <label for="lname">Gender</label>
+  </div>
+  <div class="col-75">
+    <input id="Gender" type="text" class="lname" name="lastname" placeholder="male/female..">
+  </div>
+</div>
+<!-- end -->
+        <div class="row">
+            <div class="col-25">
+              <label for="lname">Addressed</label>
+            </div>
+            <div class="col-75">
+              <input id="addresse" type="text" class="lname" name="lastname" placeholder="Your Addressed..">
+            </div>
+          </div>
+          <!-- end -->
+<div class="row">
+  <div class="col-25">
+    <label for="lname">Do you have a laptop</label>
+  </div>
+  <div class="col-75">
+    <input required type="text" class="lname" name="lastname" placeholder="yes or No">
+  </div>
+</div>
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">email addresse</label>
+            </div>
+            <div class="col-75">
+              <input id="email" type="text" class="lname" name="lastname" placeholder="Your email..">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="country">Select your Course</label>
+              
+            </div>
+            <div class="col-75">
+              <select  id="country" name="country">
+                <option value="MS Office">select....</option>
+                <option value="MS Office">MS Office</option>
+                <option value="Graphics/Web Designing">Graphics/Web Designing</option>
+                <option value="Diploma In IT">Diploma In IT</option>
+                <option value="Dekstop Application">Dekstop Application</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="subject">write something about your selected course,show your interest</label>
+            </div>
+            <div class="col-75">
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            </div>
+          </div>
+         
+      
+      <center>
+      <button class="btn" id="form">submit</button>
+    </center>
+    <div class="list">
+    
+    <li>I hereby, solemnly declare that the data and facts mentioned herein are true and correct to the best of my knowledge. Further, I will abide by all the established and future regulations and policies of KIT</li>
+    <li>I hereby accept the responsibilities of good conduct and guarantee that I will not be involved in any other activity, political or ethical, but learning during my stay in the program</li>
+    <li>Defiance will render my admission canceled at any point in time.</li>
+    <li> Upon completion, of the course, I will complete the required project by KIT</li>
+    <li>It's mandatory for female students to wear abaya/hijab in the class</li>
+  
+</div>
+</form>
+</div>
+
+
+
+
+
+
+<script src="applyNow.js"></script>
+</body>
+</html>
